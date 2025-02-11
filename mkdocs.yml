@@ -1,0 +1,14 @@
+site_name: Thinking Garden
+
+theme:
+  name: material
+  language: zh
+  font:
+    text: Noto Sans SC
+    code: Fira Code
+
+plugins:
+  - search:
+      lang:
+        - en
+        - zh
