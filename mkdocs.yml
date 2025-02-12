@@ -5,7 +5,15 @@ theme:
   language: zh
   font:
     text: Noto Sans SC
-    code: Fira Code
+    # code: Fira Code
+
+# 代码块高亮
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 plugins:
   - search:
