@@ -3,6 +3,8 @@ site_name: Thinking Garden
 theme:
   name: material
   language: zh
+  features:
+    - content.code.copy
   font:
     text: Noto Sans SC
     # code: Fira Code
