@@ -45,9 +45,9 @@ ELF file SHA256: 6613aca3f
 
 使用命令`riscv32-esp-elf-gdb --batch -n ./build/myproject.elf -ex 'target remote | python $IDF_PATH/tools/gdb_panic_server.py --target esp32p4 ./dump.log' -ex bt`打印异常发生时的函数调用栈：
 ```
-app_main () at /home/xxx/govee/myproject/main/govee_app_main.cpp:33
+app_main () at /home/xxx/myproject/main/app_main.cpp:33
 33          _div_by_zero();
-#0  app_main () at /home/xxx/govee/myproject/main/govee_app_main.cpp:33
+#0  app_main () at /home/xxx/myproject/main/app_main.cpp:33
 #1  0x48121362 in main_task (args=<optimized out>) at /home/xxx/devenv/esp-idf/components/freertos/app_startup.c:208
 #2  0x00000000 in ?? ()
 Backtrace stopped: frame did not save the PC
