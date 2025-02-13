@@ -17,8 +17,14 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
 
+# plugins:
+#   - search:
+#     separator: '[\s\u200b\-]'
+#       # lang:
+#       #   - en
+#       #   - zh
+
+
 plugins:
   - search:
-      lang:
-        - en
-        - zh
+      separator: '[\s\u200b\-]'

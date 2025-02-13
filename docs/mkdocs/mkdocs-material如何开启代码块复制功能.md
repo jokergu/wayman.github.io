@@ -1,4 +1,5 @@
 
+在 `mkdocs.yml`中添加：
 ```mkdocs
 theme:
   features:
