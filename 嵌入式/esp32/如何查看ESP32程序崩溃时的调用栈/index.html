@@ -635,9 +635,9 @@
 </code></pre></div></p>
 <p>在项目中新建一个<code>dump.log</code>文件，并将如上的异常信息拷贝到<code>dump.log</code>文件中。</p>
 <p>使用命令<code>riscv32-esp-elf-gdb --batch -n ./build/myproject.elf -ex 'target remote | python $IDF_PATH/tools/gdb_panic_server.py --target esp32p4 ./dump.log' -ex bt</code>打印异常发生时的函数调用栈：
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>app_main () at /home/xxx/govee/myproject/main/govee_app_main.cpp:33
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>app_main () at /home/xxx/myproject/main/app_main.cpp:33
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>33          _div_by_zero();
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>#0  app_main () at /home/xxx/govee/myproject/main/govee_app_main.cpp:33
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>#0  app_main () at /home/xxx/myproject/main/app_main.cpp:33
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>#1  0x48121362 in main_task (args=&lt;optimized out&gt;) at /home/xxx/devenv/esp-idf/components/freertos/app_startup.c:208
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>#2  0x00000000 in ?? ()
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>Backtrace stopped: frame did not save the PC
